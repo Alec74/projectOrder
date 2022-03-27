@@ -1,0 +1,18 @@
+.contentGrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+
+.contentItem {
+    background-color: #080808;
+    text-align: center;
+    border: 1px solid white;
+    padding: 40px 0 40px 0;
+    color: white;
+    border-radius: 10px;
+}
+
+.contentTitle {
+    text-align: center;
+}
