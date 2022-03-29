@@ -136,10 +136,10 @@
     background-color: #2f2e2e;
 }
 
-.grid {
+.grid { 
     display: grid;
     grid-template-columns: auto;
-}
+} 
 
 .gridItem {
     background-color: #080808;

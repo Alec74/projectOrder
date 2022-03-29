@@ -1,6 +1,6 @@
-import styles from '../styles/login.module.css';
+import styles from '../styles/signup.module.css';
 
-export default function loginForm() {
+export default function signupForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -13,7 +13,7 @@ export default function loginForm() {
     return (
         <>
             <h1 className={`${styles.title}`}>
-                Login
+                Signup
             </h1>
             <form onSubmit={(e) => handleSubmit(e)}>
                 <div className={`${styles.formContainer}`}>

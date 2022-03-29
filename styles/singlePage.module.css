@@ -1,0 +1,20 @@
+.productContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    width: fit-content;
+    height: fit-content;
+    margin: 100px;
+    padding: 10px;
+    border: 5px solid black;
+}
+
+.productTitle {
+    font-size: 40px;
+}
+
+.centerText {
+    max-width: 480px;
+}

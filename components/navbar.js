@@ -1,5 +1,4 @@
 import Head from 'next/head';
-// import styles from '../styles/Home.module.css';
 import styles from '../styles/navbar.module.css'
 
 export default function navBar() {
@@ -36,7 +35,7 @@ export default function navBar() {
                                     <a className={styles.navLink1} data-content="Toggle Light/Dark Mode" href="#"><i className="fa-solid fa-moon fa-xl"></i></a>
                                 </li>
                                 <li className={`${styles.navItems} ${styles.cart}`}>
-                                    <a className={styles.navLink1} data-content="Login/Signup" href="/login"><i className="fa-solid fa-user"></i></a>
+                                    <a className={styles.navLink1} data-content="Login/Signup" href="/signup"><i className="fa-solid fa-user"></i></a>
                                 </li>
                                 <li className={styles.navItems}>
                                     <a onClick={() => handleClick()} className={`${styles.navLink} ${styles.menu}`} href="#"><i className="icon fa-solid fa-bars fa-2xl"></i></a>
@@ -48,7 +47,7 @@ export default function navBar() {
                 </section>
                 <section className={`${styles.navBarOverlay} ${styles.hide}`}>
                     <div className={`${styles.grid}`}>
-                        <a href='/login'><div className={`${styles.gridItem}`}><i className="fa-solid fa-user"></i><h3>Login/Signup</h3></div></a>
+                        <a href='/signup'><div className={`${styles.gridItem}`}><i className="fa-solid fa-user"></i><h3>Login/Signup</h3></div></a>
                         <a href='#'><div className={`${styles.gridItem}`}><i className="fa-solid fa-moon fa-xl"></i><h3>Toggle Light/Dark Mode</h3></div></a>
                         <a href="https://alec74.github.io/AlecMcGlone/" target="_blank"><div className={`${styles.gridItem}`}><i className="fa-solid fa-square-arrow-up-right fa-xl"></i><h3>Visit My Website</h3></div></a>
                     </div>
