@@ -1,23 +1,27 @@
-# Apollo Server and Client Auth Example
+# Order a WebApp Today ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-[Apollo](https://www.apollographql.com/client/) is a GraphQL client that allows you to easily query the exact data you need from a GraphQL server. In addition to fetching and mutating data, Apollo analyzes your queries and their results to construct a client-side cache of your data, which is kept up to date as further queries and mutations are run.
+  ## Description
 
-In this simple example, we integrate Apollo seamlessly with [Next.js data fetching methods](https://nextjs.org/docs/basic-features/data-fetching) to fetch queries in the server and hydrate them in the browser.
+My freelance storefront to order custom made web applications
+  
+  ## Table of Contents
+  * [Usage](#usage)
+  * [License](#license)
 
-## Deploy your own
+  ## Usage
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/api-routes-apollo-server-and-client-auth)
+Navigate to the live webpage to get in contact and start designing your projects today!
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/api-routes-apollo-server-and-client-auth&project-name=api-routes-apollo-server-and-client-auth&repository-name=api-routes-apollo-server-and-client-auth)
+  
+  ## Questions
 
-## How to use
+  I can be contacted via email or my github account to answer questions related to building projects.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) or [npx](https://github.com/zkat/npx#readme) to bootstrap the example:
-
-```bash
-npx create-next-app --example api-routes-apollo-server-and-client-auth api-routes-apollo-server-and-client-auth-app
-# or
-yarn create next-app --example api-routes-apollo-server-and-client-auth api-routes-apollo-server-and-client-auth-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+  * Github Profile: [Alec74](https://github.com/Alec74)
+  * alecmcglone@gmail.com
+  
+  ## License
+  Notice: This application is licensed under the MIT License.
+  
+  [License-Link](./LICENSE)
+    
