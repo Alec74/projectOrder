@@ -5,6 +5,8 @@ export const typeDefs = gql`
     id: ID!
     email: String!
     createdAt: Int!
+    hash: String!
+    salt: String!
   }
 
   input SignUpInput {

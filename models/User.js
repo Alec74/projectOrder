@@ -15,6 +15,12 @@ const UserSchema = new mongoose.Schema({
     },
     created: {
         type: Date,
+    },
+    hash: {
+        type: String,
+    },
+    salt: {
+        type: String,
     }
 })
 

@@ -8,6 +8,7 @@ import Field from '../components/field';
 import Navbar from '../components/navbar';
 import dbConnect from '../lib/dbConnect';
 import User from '../models/User';
+import crypto from 'crypto';
 
 import styles from '../styles/login.module.css';
 
@@ -31,19 +32,27 @@ function SignIn() {
   async function handleSubmit(event) {
     event.preventDefault()
 
-    
+
     const emailElement = event.currentTarget.elements.email
     const passwordElement = event.currentTarget.elements.password
     // console.log(emailElement)
 
     try {
       await client.resetStore()
+      // const salt = crypto.randomBytes(16).toString('hex');
+      // const hash = crypto
+      //   .pbkdf2Sync(passwordElement.value, salt, 1000, 64, 'sha512')
+      //   .toString('hex')
+// console.log('signin');
       const { data } = await signIn({
         variables: {
           email: emailElement.value,
           password: passwordElement.value,
+          // salt: salt,
+          // hash: hash,
         },
       })
+      console.log(data, "data");
       if (data.signIn.user) {
         await router.push('/')
       }

@@ -21,8 +21,10 @@ const Index = () => {
   const router = useRouter()
   const { data, loading, error } = useQuery(ViewerQuery)
   const viewer = data?.viewer
-  // const shouldRedirect = !(loading || error || viewer)
+  const shouldRedirect = !(loading || error || viewer)
 
+  console.log(loading, '\n', error, '\n', viewer)
+  // console.log(shouldRedirect)
   // useEffect(() => {
   //   if (shouldRedirect) {
   //     router.push('/signin')
@@ -37,19 +39,21 @@ const Index = () => {
   //   )
   // }
 
-  // if (viewer) {
-  //   return (
-  // <>
-  //   <Navbar />
-  //   <HomePage />
-  // </>
-  //   )
-  // }
+  if (viewer) {
+    return (
+  <>
+    <Navbar />
+    <HomePage />
+    <h1>Logged in</h1>
+  </>
+    )
+  }
 
   return (
     <>
       <Navbar />
       <HomePage />
+      <h1>Not logged in</h1>
     </>
   )
 }

@@ -9,7 +9,7 @@ export const resolvers = {
     async viewer(_parent, _args, context, _info) {
       try {
         const session = await getLoginSession(context.req)
-
+        // console.log(session)
         if (session) {
           return findUser({ email: session.email })
         }
@@ -26,15 +26,18 @@ export const resolvers = {
       return { user }
     },
     async signIn(_parent, args, context, _info) {
-      const user = await findUser({ email: args.input.email })
-
+      const user = await findUser(args.input.email)
+      
+      
       if (user && (await validatePassword(user, args.input.password))) {
         const session = {
           id: user.id,
           email: user.email,
         }
-
+        // console.log(session, "test")
+        // console.log("res", context.res, "res")
         await setLoginSession(context.res, session)
+        
 
         return { user }
       }
